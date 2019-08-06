@@ -1,0 +1,77 @@
+name: tbco_conf_19
+description: Event App for TBCØ Conference 2019
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  webview_flutter: ^0.3.3+1
+  flutter_platform_widgets: ^0.12.0
+  dots_indicator: ^1.0.0
+  photo_view: ^0.4.2
+
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+
+
+  assets:
+    - images/home_ic.png
+    - images/menu_bg.jpg
+    - images/map_ic.png
+    - images/schedule_ic.png
+    - images/merch_ic.png
+    - images/s_and_c_ic.png
+    - images/henry+seeley.jpg
+    - images/banning.jpg
+    - images/robert.jpg
+    - images/darrell.jpg
+    - images/tbco.jpg
+    - images/map.png
+    - images/sand.jpg
+    - images/merch_placeholder.jpg
+
+  fonts:
+    - family: Respira
+      fonts:
+        - asset: fonts/Respira-Black.ttf
+
+    - family: Helvetica
+      fonts:
+        - asset: fonts/HelveticaNeueLTStd-Hv.ttf
+    - family: Helvetica-Bold
+      fonts:
+        - asset: fonts/HelveticaNeueLTStd-HvEx.ttf
+
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
