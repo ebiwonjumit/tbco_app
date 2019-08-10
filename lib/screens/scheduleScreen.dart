@@ -18,7 +18,7 @@ class ScheduleScreenState extends State<ScheduleScreen> {
   @override
   Widget build(BuildContext context) {
     return PageView(
-        physics: PageScrollPhysics(),
+        physics: ClampingScrollPhysics(),
         children: <Widget>[
           ScheduleScreenWidget(0, 'Thursday, September 12th', [
             '4:00PM',
