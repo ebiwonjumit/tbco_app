@@ -52,7 +52,7 @@ class RegisterScreenState extends State<RegisterScreen> {
               ),
               Container(
                 margin: EdgeInsets.all(15),
-                padding: EdgeInsets.all(3),
+                padding: EdgeInsets.all(5),
                 decoration: BoxDecoration(
                   border: Border.all(color:Colors.white, width: 4)
                 ),
