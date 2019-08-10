@@ -88,7 +88,7 @@ class HomeScreenState  extends State<HomeScreen>{
 
         },
             body: ListView.builder(
-              itemCount: 5,
+              itemCount: 7,
               padding: EdgeInsets.all(5),
               itemBuilder: (BuildContext context, int index){
                 return Container(
