@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tbco_conf_19/screens/web.dart';
+import 'package:tbco_conf_19/screens/registerScreen.dart';
 import 'package:tbco_conf_19/screens/homeScreen.dart';
 import 'package:tbco_conf_19/screens/mapScreen.dart';
 import 'package:tbco_conf_19/screens/merchScreen.dart';
@@ -25,7 +25,7 @@ class highlightBottomNavScreenState  extends State<highlightBottomNavScreen>{
     ScheduleScreen(),
     MapScreen(),
     MerchScreen(),
-    Web('+++SAINTS & COMRADES+++','https://thebelongingco.brushfire.com/conference-2019/446425'),
+    RegisterScreen(),
 
 
 

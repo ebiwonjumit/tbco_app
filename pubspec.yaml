@@ -15,7 +15,8 @@ dependencies:
   flutter_platform_widgets: ^0.12.0
   dots_indicator: ^1.0.0
   photo_view: ^0.4.2
-
+  video_player: ^0.10.1+6
+  url_launcher: ^5.1.2
   cupertino_icons: ^0.1.2
 
 dev_dependencies:
@@ -42,6 +43,10 @@ flutter:
     - images/map.png
     - images/sand.jpg
     - images/merch_placeholder.jpg
+    - images/splash_vid.mp4
+    - images/leadership.jpg
+    - images/talks.jpg
+    - images/register_background.jpg
 
   fonts:
     - family: Respira
