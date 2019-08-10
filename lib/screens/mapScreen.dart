@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:photo_view/photo_view.dart';
+import 'package:scalable_image/scalable_image.dart';
 
 
 class MapScreen extends StatefulWidget {
@@ -34,8 +34,12 @@ class MapScreenState extends State<MapScreen> {
         ),
       ),
       body: Container(
-        child: PhotoView(
+        child: ScalableImage(
           imageProvider: AssetImage('images/map.png'),
+          dragSpeed: 4.0,
+          maxScale: 16.0,
+          wrapInAspect: false,
+          enableScaling: true,
         ),
       )
 

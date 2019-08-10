@@ -18,7 +18,7 @@ class ScheduleScreenState extends State<ScheduleScreen> {
   @override
   Widget build(BuildContext context) {
     return PageView(
-        physics: ClampingScrollPhysics(),
+        physics: PageScrollPhysics(),
         children: <Widget>[
           ScheduleScreenWidget(0, 'Thursday, September 12th', [
             '4:00PM',
@@ -44,7 +44,7 @@ class ScheduleScreenState extends State<ScheduleScreen> {
             'Auditorium Doors Open',
             'Morning Session',
             'Break',
-            'Breakout Session 1',
+            'Breakouts',
             'TBCO Talks',
             'DINNER BREAK',
             'Doors Open',
@@ -65,7 +65,7 @@ class ScheduleScreenState extends State<ScheduleScreen> {
             'Auditorium Doors Open',
             'Morning Session',
             'Break',
-            'Breakout Session 1',
+            'Breakouts',
             'TBCO Talks',
             'DINNER BREAK',
             'Doors Open',
@@ -77,7 +77,6 @@ class ScheduleScreenState extends State<ScheduleScreen> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     controller.dispose();
     super.dispose();
   }

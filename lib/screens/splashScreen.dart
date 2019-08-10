@@ -44,7 +44,7 @@ class SplashScreenState extends State<SplashScreen> {
     playerController =
     VideoPlayerController.asset('images/splash_vid.mp4')
       ..addListener(listener)
-      ..setVolume(1.0)
+      ..setVolume(0.0)
       ..initialize()
       ..play();
   }
@@ -52,7 +52,6 @@ class SplashScreenState extends State<SplashScreen> {
   @override
   void deactivate() {
     if (playerController != null) {
-      playerController.setVolume(0.0);
       playerController.removeListener(listener);
     }
     super.deactivate();

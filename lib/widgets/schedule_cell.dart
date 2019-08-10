@@ -26,9 +26,9 @@ class _ScheduleCell extends State<ScheduleCell>{
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Text(time, style: TextStyle(color: Colors.white, fontSize: 14, fontFamily: 'Helvetica-Bold', fontWeight: FontWeight.bold),),
-              Container(width: 20,),
-              Text(eventTitle, style: TextStyle(color: Colors.white, fontSize: 14, fontFamily: 'Helvetica',fontStyle: FontStyle.italic ),),
+              Text(time, style: TextStyle(color: Colors.white, fontSize: 13, fontFamily: 'Helvetica-Bold', fontWeight: FontWeight.bold),),
+              Container(width: 18,),
+              Text(eventTitle, style: TextStyle(color: Colors.white, fontSize: 13, fontFamily: 'Helvetica',fontStyle: FontStyle.italic ),),
 
 
             ]),

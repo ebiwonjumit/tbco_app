@@ -7,10 +7,16 @@ class RegisterScreen extends StatefulWidget {
 }
 
 class RegisterScreenState extends State<RegisterScreen> {
+  AssetImage registerBackground;
+
+
   @override
   void initState() {
     super.initState();
+    registerBackground = AssetImage('images/register_background.jpg');
+
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -30,9 +36,7 @@ class RegisterScreenState extends State<RegisterScreen> {
           width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage(
-                    'images/register_background.jpg',
-                  ),
+                  image: registerBackground,
                   fit: BoxFit.cover)),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -44,7 +48,7 @@ class RegisterScreenState extends State<RegisterScreen> {
               Text(
                 '++HAVE YOU REGISTERED?++',
                 style: TextStyle(
-                    color: Colors.white, fontFamily: 'Helvetica', fontSize: 23),
+                    color: Colors.white, fontFamily: 'Helvetica', fontSize: 20),
               ),
               Container(
                 margin: EdgeInsets.all(15),
