@@ -19,7 +19,7 @@ class MerchScreenState extends State<MerchScreen> {
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
             image: DecorationImage(
-          image: AssetImage('images/menu_bg.jpg'),
+          image: AssetImage('assets/images/menu_bg.jpg'),
               fit: BoxFit.fill
         )),
       ),
@@ -47,7 +47,7 @@ class MerchScreenState extends State<MerchScreen> {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(5.0)),
                   image: DecorationImage(
-                      image: AssetImage('images/merch_placeholder_1.jpg'),
+                      image: AssetImage('assets/images/merch_placeholder_1.jpg'),
                       fit: BoxFit.fill)),
             ),
             Container(
@@ -57,7 +57,7 @@ class MerchScreenState extends State<MerchScreen> {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(5.0)),
                   image: DecorationImage(
-                      image: AssetImage('images/merch_placeholder_2.jpeg'),
+                      image: AssetImage('assets/images/merch_placeholder_2.jpeg'),
                       fit: BoxFit.fill)),
             ),
             Container(
@@ -67,7 +67,7 @@ class MerchScreenState extends State<MerchScreen> {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(5.0)),
                   image: DecorationImage(
-                      image: AssetImage('images/merch_placeholder_3.jpeg'),
+                      image: AssetImage('assets/images/merch_placeholder_3.jpeg'),
                       fit: BoxFit.fill)),
             ),
             Container(
@@ -77,7 +77,7 @@ class MerchScreenState extends State<MerchScreen> {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(5.0)),
                   image: DecorationImage(
-                      image: AssetImage('images/merch_placeholder_4.jpeg'),
+                      image: AssetImage('assets/images/merch_placeholder_4.jpeg'),
                       fit: BoxFit.fill)),
             ),
             Container(
@@ -87,7 +87,7 @@ class MerchScreenState extends State<MerchScreen> {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(5.0)),
                   image: DecorationImage(
-                      image: AssetImage('images/merch_placeholder_5.jpeg'),
+                      image: AssetImage('assets/images/merch_placeholder_5.jpeg'),
                       fit: BoxFit.fill)),
             ),
           ],

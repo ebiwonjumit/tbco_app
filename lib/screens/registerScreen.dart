@@ -7,13 +7,11 @@ class RegisterScreen extends StatefulWidget {
 }
 
 class RegisterScreenState extends State<RegisterScreen> {
-  AssetImage registerBackground;
 
 
   @override
   void initState() {
     super.initState();
-    registerBackground = AssetImage('images/register_background.jpg');
 
   }
 
@@ -21,6 +19,7 @@ class RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.transparent,
         appBar: AppBar(
           backgroundColor: Color(0xFF2d2d2d),
           centerTitle: true,
@@ -32,11 +31,10 @@ class RegisterScreenState extends State<RegisterScreen> {
           ),
         ),
         body: Container(
-          height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: registerBackground,
+                  image: AssetImage('assets/images/register_background.jpg'),
                   fit: BoxFit.cover)),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,

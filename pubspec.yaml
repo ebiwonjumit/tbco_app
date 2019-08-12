@@ -29,40 +29,40 @@ flutter:
 
 
   assets:
-    - images/home_ic.png
-    - images/menu_bg.jpg
-    - images/map_ic.png
-    - images/schedule_ic.png
-    - images/merch_ic.png
-    - images/s_and_c_ic.png
-    - images/henry+seeley.jpg
-    - images/banning.jpg
-    - images/robert.jpg
-    - images/darrell.jpg
-    - images/tbco.jpg
-    - images/map.png
-    - images/sand.jpg
-    - images/merch_placeholder_1.jpg
-    - images/merch_placeholder_2.jpeg
-    - images/merch_placeholder_3.jpeg
-    - images/merch_placeholder_4.jpeg
-    - images/merch_placeholder_5.jpeg
-    - images/splash_vid.mp4
-    - images/leadership.jpg
-    - images/talks.jpg
-    - images/register_background.jpg
+    - assets/images/home_ic.png
+    - assets/images/menu_bg.jpg
+    - assets/images/map_ic.png
+    - assets/images/schedule_ic.png
+    - assets/images/merch_ic.png
+    - assets/images/s_and_c_ic.png
+    - assets/images/henry+seeley.jpg
+    - assets/images/banning.jpg
+    - assets/images/robert.jpg
+    - assets/images/darrell.jpg
+    - assets/images/tbco.jpg
+    - assets/images/map.png
+    - assets/images/sand.jpg
+    - assets/images/merch_placeholder_1.jpg
+    - assets/images/merch_placeholder_2.jpeg
+    - assets/images/merch_placeholder_3.jpeg
+    - assets/images/merch_placeholder_4.jpeg
+    - assets/images/merch_placeholder_5.jpeg
+    - assets/images/leadership.jpg
+    - assets/images/talks.jpg
+    - assets/images/register_background.jpg
+    - assets/splash_vid.mp4
 
   fonts:
     - family: Respira
       fonts:
-        - asset: fonts/Respira-Black.ttf
+        - asset: assets/fonts/Respira-Black.ttf
 
     - family: Helvetica
       fonts:
-        - asset: fonts/HelveticaNeueLTStd-Hv.ttf
+        - asset: assets/fonts/HelveticaNeueLTStd-Hv.ttf
     - family: Helvetica-Bold
       fonts:
-        - asset: fonts/HelveticaNeueLTStd-HvEx.ttf
+        - asset: assets/fonts/HelveticaNeueLTStd-HvEx.ttf
 
 
   # To add custom fonts to your application, add a fonts section here,

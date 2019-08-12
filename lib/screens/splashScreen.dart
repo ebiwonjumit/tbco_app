@@ -42,7 +42,7 @@ class SplashScreenState extends State<SplashScreen> {
 
   void initializeVideo() {
     playerController =
-    VideoPlayerController.asset('images/splash_vid.mp4')
+    VideoPlayerController.asset('assets/splash_vid.mp4')
       ..addListener(listener)
       ..setVolume(0.0)
       ..initialize()
