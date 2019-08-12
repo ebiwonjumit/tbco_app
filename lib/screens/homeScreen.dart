@@ -29,7 +29,7 @@ class HomeScreenState  extends State<HomeScreen>{
         decoration: BoxDecoration(
         image: DecorationImage(
         image: AssetImage(
-        'images/menu_bg.jpg',
+        'assets/images/menu_bg.jpg',
     ),
     fit: BoxFit.fill,
     )
@@ -80,7 +80,7 @@ class HomeScreenState  extends State<HomeScreen>{
 
               ),
                     background: Image.asset(
-                      'images/sand.jpg',
+                      'assets/images/sand.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),

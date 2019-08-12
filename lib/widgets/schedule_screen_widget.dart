@@ -21,7 +21,7 @@ class ScheduleScreenWidget extends StatelessWidget{
             decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage(
-                    'images/menu_bg.jpg',
+                    'assets/images/menu_bg.jpg',
                   ),
                   fit: BoxFit.fill,
                 )

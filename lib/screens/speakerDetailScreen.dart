@@ -33,7 +33,7 @@ class SpeakerDetailScreenState extends State<SpeakerDetailScreen> {
       Container(
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('images/menu_bg.jpg'), fit: BoxFit.cover)),
+                image: AssetImage('assets/images/menu_bg.jpg'), fit: BoxFit.cover)),
       ),
       Scaffold(
           backgroundColor: Colors.transparent,

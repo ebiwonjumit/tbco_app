@@ -7,67 +7,69 @@ class RegisterScreen extends StatefulWidget {
 }
 
 class RegisterScreenState extends State<RegisterScreen> {
-
-
   @override
   void initState() {
     super.initState();
-
   }
-
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.transparent,
-        appBar: AppBar(
-          backgroundColor: Color(0xFF2d2d2d),
-          centerTitle: true,
-          title: Text(
-            '+++Saints And Comrades+++',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-                color: Colors.white, fontSize: 18, fontFamily: 'Helvetica'),
+    return Stack(
+        children: <Widget>[
+      Container(
+        width: MediaQuery.of(context).size.width,
+        child: Image.asset(
+          'assets/images/register_background.jpg',
+          fit: BoxFit.cover,
+        )
+      ),
+      Scaffold(
+          backgroundColor: Colors.transparent,
+          appBar: AppBar(
+            backgroundColor: Color(0xFF2d2d2d),
+            centerTitle: true,
+            title: Text(
+              '+++Saints And Comrades+++',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  color: Colors.white, fontSize: 18, fontFamily: 'Helvetica'),
+            ),
           ),
-        ),
-        body: Container(
-          width: MediaQuery.of(context).size.width,
-          decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage('assets/images/register_background.jpg'),
-                  fit: BoxFit.cover)),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              Padding(
-                padding: EdgeInsets.only(top: 50),
-              ),
-              Text(
-                '++HAVE YOU REGISTERED?++',
-                style: TextStyle(
-                    color: Colors.white, fontFamily: 'Helvetica', fontSize: 20),
-              ),
-              Container(
-                margin: EdgeInsets.all(15),
-                padding: EdgeInsets.all(5),
-                decoration: BoxDecoration(
-                  border: Border.all(color:Colors.white, width: 4)
+          body: Container(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.only(top: 50),
                 ),
-                  child: FlatButton(
-                textColor: Colors.white,
-                color: Colors.transparent,
-                splashColor: Colors.transparent,
-                highlightColor: Colors.transparent,
-                onPressed: _launchURL,
-                child: Text(
-                  'REGISTER NOW',
-                  style: TextStyle(fontSize: 20, fontFamily: 'Helvetica'),
+                Text(
+                  '++HAVE YOU REGISTERED?++',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Helvetica',
+                      fontSize: 20),
                 ),
-              ))
-            ],
-          ),
-        ));
+                Container(
+                    margin: EdgeInsets.all(15),
+                    padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.white, width: 4)),
+                    child: FlatButton(
+                      textColor: Colors.white,
+                      color: Colors.transparent,
+                      splashColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onPressed: _launchURL,
+                      child: Text(
+                        'REGISTER NOW',
+                        style: TextStyle(fontSize: 20, fontFamily: 'Helvetica'),
+                      ),
+                    ))
+              ],
+            ),
+          ))
+    ]);
   }
 
   _launchURL() async {
