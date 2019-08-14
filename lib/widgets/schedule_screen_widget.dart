@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:dots_indicator/dots_indicator.dart';
 
 import 'package:tbco_conf_19/widgets/schedule_cell.dart';
 
@@ -30,19 +29,6 @@ class ScheduleScreenWidget extends StatelessWidget{
 
           Scaffold(
             backgroundColor: Colors.transparent,
-            appBar:AppBar(
-              backgroundColor: Color(0xFF2d2d2d),
-              centerTitle: true,
-              title: Text(
-                '+++' + date + '+++',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                    fontFamily: 'Respira'
-                ),
-              ),
-            ),
 
             body: ListView.separated(
                 itemCount: events.length,
@@ -63,17 +49,6 @@ class ScheduleScreenWidget extends StatelessWidget{
                   );
                 }
             ),
-
-            bottomNavigationBar:
-          Padding(
-            padding: EdgeInsets.only(left:MediaQuery.of(context).size.width/2-20, bottom: 10),
-            child: DotsIndicator(
-                dotsCount: 3,
-                position: index,
-                decorator: DotsDecorator(
-                  activeColor: Color(0xFFffff00),
-                ),
-            ))
 
           ),
             ]

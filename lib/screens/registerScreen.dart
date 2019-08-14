@@ -15,7 +15,7 @@ class RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     return Stack(
-        children: <Widget>[
+         children: <Widget>[
       Container(
         width: MediaQuery.of(context).size.width,
         child: Image.asset(
@@ -35,7 +35,8 @@ class RegisterScreenState extends State<RegisterScreen> {
                   color: Colors.white, fontSize: 18, fontFamily: 'Helvetica'),
             ),
           ),
-          body: Container(
+          body:Center(
+          child: Container(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -68,7 +69,9 @@ class RegisterScreenState extends State<RegisterScreen> {
                     ))
               ],
             ),
-          ))
+          )
+          )
+      )
     ]);
   }
 
