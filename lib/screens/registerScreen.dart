@@ -14,29 +14,27 @@ class RegisterScreenState extends State<RegisterScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-         children: <Widget>[
+    return Stack(children: <Widget>[
       Container(
-        width: MediaQuery.of(context).size.width,
-        child: Image.asset(
-          'assets/images/register_background.jpg',
-          fit: BoxFit.cover,
-        )
-      ),
+          width: MediaQuery.of(context).size.width,
+          child: Image.asset(
+            'assets/images/register_background.jpg',
+            fit: BoxFit.cover,
+          )),
       Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
             backgroundColor: Color(0xFF2d2d2d),
             centerTitle: true,
             title: Text(
-              '+++Saints And Comrades+++',
+              '+++SAINTS AND COMRADES+++',
               textAlign: TextAlign.center,
               style: TextStyle(
                   color: Colors.white, fontSize: 18, fontFamily: 'Helvetica'),
             ),
           ),
-          body:Center(
-          child: Container(
+          body: Center(
+              child: Container(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -56,22 +54,22 @@ class RegisterScreenState extends State<RegisterScreen> {
                     padding: EdgeInsets.all(5),
                     decoration: BoxDecoration(
                         border: Border.all(color: Colors.white, width: 4)),
-                    child: FlatButton(
-                      textColor: Colors.white,
+                    child: InkWell(
+                      onTap: (){
+                        _launchURL();
+                      },
+                        child: FlatButton(
                       color: Colors.transparent,
                       splashColor: Colors.transparent,
                       highlightColor: Colors.transparent,
-                      onPressed: _launchURL,
                       child: Text(
                         'REGISTER NOW',
-                        style: TextStyle(fontSize: 20, fontFamily: 'Helvetica'),
+                        style: TextStyle(fontSize: 20, fontFamily: 'Helvetica', color: Colors.white),
                       ),
-                    ))
+                    )))
               ],
             ),
-          )
-          )
-      )
+          )))
     ]);
   }
 

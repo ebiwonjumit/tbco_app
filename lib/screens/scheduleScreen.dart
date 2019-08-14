@@ -21,14 +21,16 @@ class ScheduleScreenState extends State<ScheduleScreen> {
         appBar: AppBar(
           backgroundColor: Color(0xFF2d2d2d),
           centerTitle: true,
-          bottom: TabBar(tabs: [
+          bottom: TabBar(
+            indicatorColor: Colors.white,
+              tabs: [
             Tab(
               text: 'Sept. 12th',
             ),
             Tab(text: 'Sept. 13th'),
             Tab(text: 'Sept. 14th')
           ]),
-          title: Text('Conference Schedule',
+          title: Text('+++CONFERENCE SCHEDULE+++',
             style: TextStyle(
                 color: Colors.white, fontSize: 18, fontFamily: 'Helvetica'),
           ),
