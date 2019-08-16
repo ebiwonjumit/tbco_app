@@ -33,7 +33,7 @@ class ScheduleScreenWidget extends StatelessWidget{
             body: ListView.separated(
                 itemCount: events.length,
                 shrinkWrap: true,
-                padding: EdgeInsets.only(top: 35, right: 20, left: 20),
+                padding: EdgeInsets.only(top: 15, right: 20, left: 20),
                 separatorBuilder: (context, position){
                   return SeparatorItem();
                 },

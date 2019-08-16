@@ -33,12 +33,18 @@ flutter:
     - assets/images/map_ic.png
     - assets/images/schedule_ic.png
     - assets/images/merch_ic.png
+    - assets/images/map_ic_2.png
     - assets/images/s_and_c_ic.png
     - assets/images/henry+seeley.jpg
+    - assets/images/henry+seeley-personal.png
     - assets/images/banning.jpg
+    - assets/images/banning-personal.png
     - assets/images/robert.jpg
+    - assets/images/robert-personal.png
     - assets/images/darrell.jpg
+    - assets/images/darrell-personal.png
     - assets/images/tbco.jpg
+    - assets/images/worship-personal.png
     - assets/images/map.png
     - assets/images/sand.jpg
     - assets/images/merch_placeholder_1.jpg

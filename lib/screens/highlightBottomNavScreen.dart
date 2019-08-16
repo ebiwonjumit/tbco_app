@@ -7,8 +7,6 @@ import 'package:tbco_conf_19/screens/scheduleScreen.dart';
 
 
 
-import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
-
 
 class highlightBottomNavScreen extends StatefulWidget {
   @override
@@ -62,7 +60,7 @@ class highlightBottomNavScreenState  extends State<highlightBottomNavScreen>{
             title: Text(''),
           ),
           BottomNavigationBarItem(
-            icon: Image.asset('assets/images/map_ic.png'),
+            icon: Image.asset('assets/images/map_ic_2.png'),
             title: Text(''),
           ),
           BottomNavigationBarItem(

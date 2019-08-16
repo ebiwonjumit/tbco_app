@@ -49,6 +49,7 @@ class MerchScreenState extends State<MerchScreen> {
                   image: DecorationImage(
                       image: AssetImage('assets/images/merch_placeholder_1.jpg'),
                       fit: BoxFit.fill)),
+              child: FlatButton(onPressed: null, child: null)
             ),
             Container(
               height: 300,

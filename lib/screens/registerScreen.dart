@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+
 class RegisterScreen extends StatefulWidget {
   @override
   RegisterScreenState createState() => RegisterScreenState();
@@ -12,11 +13,13 @@ class RegisterScreenState extends State<RegisterScreen> {
     super.initState();
   }
 
+
   @override
   Widget build(BuildContext context) {
     return Stack(children: <Widget>[
       Container(
           width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
           child: Image.asset(
             'assets/images/register_background.jpg',
             fit: BoxFit.cover,
@@ -55,6 +58,7 @@ class RegisterScreenState extends State<RegisterScreen> {
                     decoration: BoxDecoration(
                         border: Border.all(color: Colors.white, width: 4)),
                     child: InkWell(
+                      splashColor: Colors.grey,
                       onTap: (){
                         _launchURL();
                       },
