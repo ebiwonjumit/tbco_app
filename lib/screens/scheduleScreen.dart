@@ -52,6 +52,7 @@ class ScheduleScreenState extends State<ScheduleScreen> {
               '9:00AM - 11:00AM',
               '11:00AM - 11:15AM',
               '11:15AM - 12:30PM',
+              '12:30PM - 2:00PM',
               '2:00PM - 4:00PM',
               '4:00PM - 6:00PM',
               '6:00PM',
@@ -59,11 +60,12 @@ class ScheduleScreenState extends State<ScheduleScreen> {
             ], [
               'Lobby Doors Open',
               'Auditorium Doors Open',
-              'Morning Session',
+              'Morning Session 1',
               'Break',
-              'Breakouts',
+              'Morning Session 2',
+              'Lunch Break',
               'TBCO Talks',
-              'DINNER BREAK',
+              'Dinner Break',
               'Doors Open',
               'Night Session'
             ]),
@@ -73,18 +75,20 @@ class ScheduleScreenState extends State<ScheduleScreen> {
               '9:00AM - 11:00AM',
               '11:00AM - 11:15AM',
               '11:15AM - 12:30PM',
+              '12:30PM - 2:00PM',
               '2:00PM - 4:00PM',
               '4:00PM - 6:00PM',
               '6:00PM',
-              '7:00PM - 10:PM'
+              '7:00PM - 10:00PM'
             ], [
               'Lobby Doors Open',
               'Auditorium Doors Open',
-              'Morning Session',
+              'Morning Session 1',
               'Break',
-              'Breakouts',
+              'Morning Session 2',
+              'Lunch Break',
               'TBCO Talks',
-              'DINNER BREAK',
+              'Dinner Break',
               'Doors Open',
               'Night Session'
             ]),

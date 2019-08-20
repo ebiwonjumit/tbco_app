@@ -55,6 +55,7 @@ flutter:
     - assets/images/leadership.jpg
     - assets/images/talks.jpg
     - assets/images/register_background.jpg
+    - assets/images/final_map.png
     - assets/splash_vid.mp4
 
   fonts:

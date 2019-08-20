@@ -46,7 +46,7 @@ class RegisterScreenState extends State<RegisterScreen> {
                   padding: EdgeInsets.only(top: 50),
                 ),
                 Text(
-                  '++HAVE YOU REGISTERED?++',
+                  '++CONFERENCE 2020++',
                   style: TextStyle(
                       color: Colors.white,
                       fontFamily: 'Helvetica',
@@ -78,7 +78,7 @@ class RegisterScreenState extends State<RegisterScreen> {
   }
 
   _launchURL() async {
-    const url = 'https://thebelongingco.brushfire.com/conference-2019/446425';
+    const url = 'https://thebelongingco.churchcenter.com/registrations/events/271006';
     if (await canLaunch(url)) {
       await launch(url);
     } else {

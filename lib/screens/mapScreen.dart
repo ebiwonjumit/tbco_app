@@ -35,7 +35,7 @@ class MapScreenState extends State<MapScreen> {
       ),
       body: Container(
         child: ScalableImage(
-          imageProvider: AssetImage('assets/images/map.png'),
+          imageProvider: AssetImage('assets/images/final_map.png'),
           dragSpeed: 4.0,
           maxScale: 16.0,
           wrapInAspect: false,

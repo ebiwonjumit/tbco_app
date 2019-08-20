@@ -76,7 +76,7 @@ class SpeakerDetailScreenState extends State<SpeakerDetailScreen> {
               SliverList(
                 delegate: SliverChildListDelegate([
                   Padding(
-                      padding: EdgeInsets.only(top: 10),
+                      padding: EdgeInsets.only(top: 10, left: 25, right: 25),
                       child: Text(
                         speakerInfo,
                         style: TextStyle(color: Colors.white, fontSize: 20),
