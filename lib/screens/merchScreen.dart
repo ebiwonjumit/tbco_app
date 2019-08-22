@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+import 'package:tbco_conf_19/widgets/merch_image.dart';
 
 class MerchScreen extends StatefulWidget {
   @override
@@ -10,6 +13,24 @@ class MerchScreenState extends State<MerchScreen> {
   void initState() {
     super.initState();
   }
+
+  List<String> merchImages = [
+    'assets/images/merch_placeholder_1.jpg',
+    'assets/images/merch_placeholder_2.jpeg',
+    'assets/images/merch_placeholder_3.jpeg',
+    'assets/images/merch_placeholder_4.jpeg',
+    'assets/images/merch_placeholder_5.jpeg'
+  ];
+
+  List<String> merchLinks = [
+    'http://tbco.store/item/saints-comrades-saint-hoodie',
+    'http://tbco.store/item/tbco-dad-hat-white',
+    'http://tbco.store/item/a-w-long-sleeve-tee-white-pink',
+    'http://tbco.store/item/belonging-bomber-black',
+    'http://tbco.store/item/unisex-cø-white',
+
+  ];
+
 
   @override
   Widget build(BuildContext context) {
@@ -37,63 +58,34 @@ class MerchScreenState extends State<MerchScreen> {
                 color: Colors.white, fontSize: 18, fontFamily: 'Helvetica'),
           ),
         ),
-        body: ListView(
-          scrollDirection: Axis.vertical,
-          children: <Widget>[
-            Container(
-              height: 300,
-              width: 200,
-              margin: EdgeInsets.all(30.0),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(5.0)),
-                  image: DecorationImage(
-                      image: AssetImage('assets/images/merch_placeholder_1.jpg'),
-                      fit: BoxFit.fill)),
-              child: FlatButton(onPressed: null, child: null)
-            ),
-            Container(
-              height: 300,
-              width: 200,
-              margin: EdgeInsets.all(30.0),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(5.0)),
-                  image: DecorationImage(
-                      image: AssetImage('assets/images/merch_placeholder_2.jpeg'),
-                      fit: BoxFit.fill)),
-            ),
-            Container(
-              height: 300,
-              width: 200,
-              margin: EdgeInsets.all(30.0),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(5.0)),
-                  image: DecorationImage(
-                      image: AssetImage('assets/images/merch_placeholder_3.jpeg'),
-                      fit: BoxFit.fill)),
-            ),
-            Container(
-              height: 300,
-              width: 200,
-              margin: EdgeInsets.all(30.0),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(5.0)),
-                  image: DecorationImage(
-                      image: AssetImage('assets/images/merch_placeholder_4.jpeg'),
-                      fit: BoxFit.fill)),
-            ),
-            Container(
-              height: 300,
-              width: 200,
-              margin: EdgeInsets.all(30.0),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(5.0)),
-                  image: DecorationImage(
-                      image: AssetImage('assets/images/merch_placeholder_5.jpeg'),
-                      fit: BoxFit.fill)),
-            ),
-          ],
-        ),
+        body: ListView.builder(
+            itemCount: 5,
+            itemBuilder: (BuildContext context, int index){
+              return InkWell(
+                focusColor: Colors.black,
+                splashColor: Colors.black,
+                borderRadius: BorderRadius.all(Radius.circular(5.0)),
+                radius: 7,
+                onTap: (){
+                  _launchURL(merchLinks[index]);
+                },
+                
+                child: MerchImage(
+                imgLocation: merchImages[index],)
+              );
+            },
+        )
       )
     ]);
   }
+
+  _launchURL(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }
+
+
