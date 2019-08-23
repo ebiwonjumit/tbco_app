@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class GridIcon extends StatelessWidget{
-  const GridIcon({this.icon,this.title});
+class GridIcon extends StatelessWidget {
+  const GridIcon({this.icon, this.title});
 
   final String icon;
   final String title;
@@ -9,22 +9,28 @@ class GridIcon extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 2,
-      width: 2,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          Center(
-            child: Image.asset(icon, fit: BoxFit.fill,),
+        child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: <Widget>[
+        Center(
+          child: Image.asset(
+            icon,
+            fit: BoxFit.contain,
           ),
-          Center(
-            child: Text(title, style: TextStyle(color: Colors.white, fontFamily: 'Helvetica-Regular'),),
-          )
-
-
-        ],
-      )
-    );
+        ),
+        Center(
+            child: Padding(
+          padding: EdgeInsets.only(top: 3),
+          child: Text(
+            title,
+            style: TextStyle(
+                color: Colors.white,
+                fontFamily: 'Helvetica-Regular',
+                fontSize: 15),
+          ),
+        ))
+      ],
+    ));
   }
 }
