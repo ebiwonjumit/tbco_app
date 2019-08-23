@@ -13,7 +13,6 @@ class _MerchImage extends State<MerchImage>{
   _MerchImage(this.imgLocation);
 
   final String imgLocation;
-  bool isPressed = false;
 
   @override
   Widget build(BuildContext context) {

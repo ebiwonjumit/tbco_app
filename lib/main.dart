@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:tbco_conf_19/screens/highlightBottomNavScreen.dart';
 import 'package:tbco_conf_19/screens/splashScreen.dart';
+import 'package:tbco_conf_19/screens/gridHomeScreen.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -14,6 +15,7 @@ void main() {
       'splash': (context) => SplashScreen(),
       // When navigating to the "/second" route, build the SecondScreen widget.
       'home': (context) => highlightBottomNavScreen(),
+      'grid': (context) => GridHomeScreen()
     },
   ));
 }

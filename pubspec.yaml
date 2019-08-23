@@ -52,6 +52,11 @@ flutter:
     - assets/images/register_background.jpg
     - assets/images/final_map.png
     - assets/images/register_background_r.jpg
+    - assets/images/schedule_icon.png
+    - assets/images/home_icon.png
+    - assets/images/merch_icon.png
+    - assets/images/sandc_icon.png
+    - assets/images/map_icon.png
     - assets/splash_vid.mp4
 
   fonts:
@@ -65,6 +70,9 @@ flutter:
     - family: Helvetica-Bold
       fonts:
         - asset: assets/fonts/HelveticaNeueLTStd-HvEx.ttf
+    - family: Helvetica-Regular
+      fonts:
+        - asset: assets/fonts/HelveticaNeueLTCom-Ex.ttf
 
 
   # To add custom fonts to your application, add a fonts section here,

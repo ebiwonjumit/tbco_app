@@ -37,7 +37,7 @@ class SplashScreenState extends State<SplashScreen> {
     playerController.setVolume(0.0);
     playerController.removeListener(listener);
     Navigator.of(context).pop('splash');
-    Navigator.of(context).pushReplacementNamed('home');
+    Navigator.of(context).pushReplacementNamed('grid');
   }
 
   void initializeVideo() {
