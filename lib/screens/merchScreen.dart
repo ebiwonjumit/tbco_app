@@ -23,11 +23,11 @@ class MerchScreenState extends State<MerchScreen> {
   ];
 
   List<String> merchLinks = [
-    'http://tbco.store/item/saints-comrades-saint-hoodie',
-    'http://tbco.store/item/tbco-dad-hat-white',
-    'http://tbco.store/item/a-w-long-sleeve-tee-white-pink',
-    'http://tbco.store/item/belonging-bomber-black',
-    'http://tbco.store/item/unisex-cø-white',
+    'https://squareup.com/store/tbco/item/saints-comrades-saint-hoodie',
+    'https://squareup.com/store/tbco/item/tbco-dad-hat-white',
+    'https://squareup.com/store/tbco/item/a-w-long-sleeve-tee-white-pink',
+    'https://squareup.com/store/tbco/item/belonging-bomber-black',
+    'https://squareup.com/store/tbco/item/unisex-cø-white'
 
   ];
 
@@ -62,10 +62,9 @@ class MerchScreenState extends State<MerchScreen> {
             itemCount: 5,
             itemBuilder: (BuildContext context, int index){
               return InkWell(
-                focusColor: Colors.black,
                 splashColor: Colors.black,
                 borderRadius: BorderRadius.all(Radius.circular(5.0)),
-                radius: 7,
+                radius: 1,
                 onTap: (){
                   _launchURL(merchLinks[index]);
                 },

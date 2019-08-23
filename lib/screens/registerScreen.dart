@@ -21,23 +21,12 @@ class RegisterScreenState extends State<RegisterScreen> {
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
           child: Image.asset(
-            'assets/images/register_background.jpg',
+            'assets/images/register_background_r.jpg',
             fit: BoxFit.cover,
           )),
-      Scaffold(
-          backgroundColor: Colors.transparent,
-          appBar: AppBar(
-            backgroundColor: Color(0xFF2d2d2d),
-            centerTitle: true,
-            title: Text(
-              '+++SAINTS AND COMRADES+++',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  color: Colors.white, fontSize: 18, fontFamily: 'Helvetica'),
-            ),
-          ),
-          body: Center(
+          Center(
               child: Container(
+                margin: EdgeInsets.only(top:40),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -73,7 +62,7 @@ class RegisterScreenState extends State<RegisterScreen> {
                     )))
               ],
             ),
-          )))
+          ))
     ]);
   }
 
