@@ -21,12 +21,17 @@ class RegisterScreenState extends State<RegisterScreen> {
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
           child: Image.asset(
-            'assets/images/register_background_r.jpg',
+            'assets/images/register_background.jpg',
             fit: BoxFit.cover,
           )),
-          Center(
+      Scaffold(
+          backgroundColor: Colors.transparent,// Remove Scaffold
+          appBar: AppBar(
+            backgroundColor: Colors.transparent,
+            centerTitle: true,
+          ),
+          body: Center(
               child: Container(
-                margin: EdgeInsets.only(top:40),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -62,7 +67,7 @@ class RegisterScreenState extends State<RegisterScreen> {
                     )))
               ],
             ),
-          ))
+          )))
     ]);
   }
 

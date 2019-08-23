@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tbco_conf_19/widgets/speaker_cell.dart';
 import 'package:tbco_conf_19/screens/speakerDetailScreen.dart';
-import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -23,7 +22,6 @@ class HomeScreenState extends State<HomeScreen> {
     "TBCO Worship",
     "TBCO Talks",
     "Leadership Co"
-
   ];
   List<String> speakerinfo = [
     "Born and raised in Australia, Henry and Alex spent many years on the pastoral team at a church in Melbourne pioneering a worship movement that grew to become a church of over 10,000 people. In 2012, they relocated to Nashville, Tennessee, with nothing but a stirring from God and in February 2014, The Belonging Co was birthed and now reaches thousands of people on a weekly basis.\n\n\n Henry is passionate about all things creative... Songwriting, producing, mixing, film, visual arts... He is also a self professed “gear nerd”, and won a GRAMMY® award in 2016 for mixing.\n\n\nAlex is a passionate communicator and teacher of the Word, possessing a unique ability to reveal how the Word of God is applicable to our everyday lives. Not only has she been a preacher for 20 years, but she is also the author of Tailor Made, her first book that introduces the power of God’s love through personal anecdotes that Alex shares.\n\n\nHenry and Alex are happily married and have two children,Holly and Taylor.",
@@ -42,7 +40,6 @@ class HomeScreenState extends State<HomeScreen> {
     "assets/images/tbco.jpg",
     "assets/images/talks.jpg",
     "assets/images/leadership.jpg"
-
   ];
 
   @override
@@ -57,76 +54,32 @@ class HomeScreenState extends State<HomeScreen> {
           fit: BoxFit.fill,
         )),
       ),
-      PlatformScaffold(
-        backgroundColor: Colors.transparent,
-        body: NestedScrollView(
-            headerSliverBuilder: (BuildContext context, bool innerBoxScrolled) {
-              return <Widget>[
-                SliverAppBar(
-                  expandedHeight: 130.0,
-                  backgroundColor: Color(0xFF212121),
-                  floating: false,
-                  pinned: true,
-                  flexibleSpace: FlexibleSpaceBar(
-                    centerTitle: true,
-                    title: Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
-                        Container(
-                          height: 4,
-                        ),
-                        Text(
-                          'Saints & Comrades',
-                          style: TextStyle(
-                            fontFamily: 'Respira',
-                            fontSize: 22,
-                            color: Colors.white,
-                          ),
-                        ),
-                        Text(
-                          'The Belonging Co Conference 2019',
-                          style: TextStyle(
-                            fontFamily: 'Helvetica',
-                            fontSize: 10,
-                            color: Colors.white,
-                          ),
-                        ),
-                        Text(
-                          'September 12-14',
-                          style: TextStyle(
-                            fontFamily: 'Helvetica',
-                            fontSize: 8,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ],
-                    ),
-                    background: Image.asset(
-                      'assets/images/sand.jpg',
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
-              ];
-            },
-            body: ListView.builder(
-              itemCount: 7,
-              padding: EdgeInsets.all(5),
-              itemBuilder: (BuildContext context, int index) {
-                return Container(
-                    height: 160,
-                    child:
-                        SpeakerCell(speakers[index], speakerimage[index], () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (BuildContext context) {
-                        return SpeakerDetailScreen(speakers[index],
-                            speakerimage[index], speakerinfo[index]);
-                      }));
+      Scaffold(
+          backgroundColor: Colors.transparent,
+          appBar: AppBar(
+            backgroundColor: Color(0xFF2d2d2d),
+            centerTitle: true,
+            title: Text(
+              '+++Guests & Hosts+++',
+              style: TextStyle(
+                  color: Colors.white, fontSize: 18, fontFamily: 'Helvetica'),
+            ),
+          ),
+          body: ListView.builder(
+            itemCount: 7,
+            padding: EdgeInsets.all(5),
+            itemBuilder: (BuildContext context, int index) {
+              return Container(
+                  height: 160,
+                  child: SpeakerCell(speakers[index], speakerimage[index], () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (BuildContext context) {
+                      return SpeakerDetailScreen(speakers[index],
+                          speakerimage[index], speakerinfo[index]);
                     }));
-              },
-            )),
-      )
+                  }));
+            },
+          )),
     ]);
   }
 }

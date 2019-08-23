@@ -25,10 +25,10 @@ class ScheduleScreenState extends State<ScheduleScreen> {
             indicatorColor: Colors.white,
               tabs: [
             Tab(
-              text: 'Sept. 12th',
+              text: 'SEPT. 12th',
             ),
-            Tab(text: 'Sept. 13th'),
-            Tab(text: 'Sept. 14th')
+            Tab(text: 'SEPT. 13th'),
+            Tab(text: 'SEPT. 14th')
           ]),
           title: Text('+++CONFERENCE SCHEDULE+++',
             style: TextStyle(

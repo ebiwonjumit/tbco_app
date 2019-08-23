@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 import 'package:tbco_conf_19/widgets/grid_icon.dart';
+import 'package:tbco_conf_19/screens/scheduleScreen.dart';
 import 'package:tbco_conf_19/screens/registerScreen.dart';
 import 'package:tbco_conf_19/screens/homeScreen.dart';
 import 'package:tbco_conf_19/screens/mapScreen.dart';
 import 'package:tbco_conf_19/screens/merchScreen.dart';
 import 'package:tbco_conf_19/screens/scheduleScreen.dart';
-
 
 class GridHomeScreen extends StatefulWidget {
   @override
@@ -87,30 +87,76 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                 mainAxisSpacing: 5.0,
                 crossAxisSpacing: 5.0,
                 children: <Widget>[
-                 GridIcon(
-                   icon: 'assets/images/schedule_icon.png',
-                   title: 'Schedule',
-                 ),
-                  GridIcon(
-                    icon: 'assets/images/sandc_icon.png',
-                    title: 'Register 2020',
-                  ),
-                  GridIcon(
-                    icon: 'assets/images/map_icon.png',
-                    title: 'Map',
-                  ),
-                  GridIcon(
-                    icon: 'assets/images/home_icon.png',
-                    title: 'Home',
-                  ),
-                  GridIcon(
-                    icon: 'assets/images/merch_icon.png',
-                    title: 'Merch',
-                  ),
-                  GridIcon(
-                    icon: 'assets/images/schedule_icon.png',
-                    title: 'Schedule',
-                  ),
+                  InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ScheduleScreen()),
+                        );
+                      },
+                      child: GridIcon(
+                        icon: 'assets/images/schedule_icon.png',
+                        title: 'Schedule',
+                      )),
+                  InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => RegisterScreen()),
+                        );
+                      },
+                      child: GridIcon(
+                        icon: 'assets/images/sandc_icon.png',
+                        title: 'Register 2020',
+                      )),
+                  InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MapScreen()),
+                        );
+                      },
+                      child: GridIcon(
+                        icon: 'assets/images/map_icon.png',
+                        title: 'Map',
+                      )),
+                  InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HomeScreen()),
+                        );
+                      },
+                      child: GridIcon(
+                        icon: 'assets/images/home_icon.png',
+                        title: 'Home',
+                      )),
+                  InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => MerchScreen()),
+                        );
+                      },
+                      child: GridIcon(
+                        icon: 'assets/images/merch_icon.png',
+                        title: 'Merch',
+                      )),
+                  InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ScheduleScreen()),
+                        );
+                      },
+                      child: GridIcon(
+                        icon: 'assets/images/schedule_icon.png',
+                        title: 'Schedule',
+                      )),
                 ],
               )))
     ]);
