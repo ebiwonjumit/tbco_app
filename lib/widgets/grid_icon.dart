@@ -21,7 +21,7 @@ class GridIcon extends StatelessWidget {
         ),
         Center(
             child: Padding(
-          padding: EdgeInsets.only(top: 3),
+          padding: EdgeInsets.only(top: 10),
           child: Text(
             title,
             style: TextStyle(

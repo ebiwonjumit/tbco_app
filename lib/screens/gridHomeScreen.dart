@@ -107,6 +107,10 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                     icon: 'assets/images/merch_icon.png',
                     title: 'Merch',
                   ),
+                  GridIcon(
+                    icon: 'assets/images/schedule_icon.png',
+                    title: 'Schedule',
+                  ),
                 ],
               )))
     ]);
