@@ -28,13 +28,6 @@ flutter:
 
 
   assets:
-    - assets/images/home_ic.png
-    - assets/images/menu_bg.jpg
-    - assets/images/map_ic.png
-    - assets/images/schedule_ic.png
-    - assets/images/merch_ic.png
-    - assets/images/map_ic_2.png
-    - assets/images/s_and_c_ic.png
     - assets/images/henry+seeley.jpg
     - assets/images/banning.jpg
     - assets/images/robert.jpg
@@ -42,21 +35,21 @@ flutter:
     - assets/images/tbco.jpg
     - assets/images/map.png
     - assets/images/sand.jpg
-    - assets/images/merch_placeholder_1.jpg
-    - assets/images/merch_placeholder_2.jpeg
-    - assets/images/merch_placeholder_3.jpeg
-    - assets/images/merch_placeholder_4.jpeg
-    - assets/images/merch_placeholder_5.jpeg
+    - assets/images/menu_bg.jpg
     - assets/images/leadership.jpg
     - assets/images/talks.jpg
     - assets/images/register_background.jpg
-    - assets/images/final_map.png
     - assets/images/register_background_r.jpg
     - assets/images/schedule_icon.png
     - assets/images/home_icon.png
     - assets/images/merch_icon.png
     - assets/images/sandc_icon.png
     - assets/images/map_icon.png
+    - assets/images/guests_icon.png
+    - assets/images/kids_icon.png
+    - assets/images/talks_icon.png
+    - assets/images/faq_icon.png
+    - assets/images/photos_icon.png
     - assets/splash_vid.mp4
 
   fonts:

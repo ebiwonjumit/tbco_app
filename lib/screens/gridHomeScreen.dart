@@ -8,6 +8,8 @@ import 'package:tbco_conf_19/screens/mapScreen.dart';
 import 'package:tbco_conf_19/screens/merchScreen.dart';
 import 'package:tbco_conf_19/screens/scheduleScreen.dart';
 
+import 'package:url_launcher/url_launcher.dart';
+
 class GridHomeScreen extends StatefulWidget {
   @override
   GridHomeScreenState createState() => GridHomeScreenState();
@@ -30,6 +32,7 @@ class GridHomeScreenState extends State<GridHomeScreen> {
       Scaffold(
           backgroundColor: Colors.transparent,
           body: NestedScrollView(
+
               headerSliverBuilder:
                   (BuildContext context, bool innerBoxScrolled) {
                 return <Widget>[
@@ -91,6 +94,17 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                       onTap: () {
                         Navigator.push(
                           context,
+                          MaterialPageRoute(builder: (context) => HomeScreen()),
+                        );
+                      },
+                      child: GridIcon(
+                        icon: 'assets/images/guests_icon.png',
+                        title: 'Guests & Hosts',
+                      )),
+                  InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
                           MaterialPageRoute(
                               builder: (context) => ScheduleScreen()),
                         );
@@ -101,15 +115,11 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                       )),
                   InkWell(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => RegisterScreen()),
-                        );
+                        //TODO: finish onTap.
                       },
                       child: GridIcon(
-                        icon: 'assets/images/sandc_icon.png',
-                        title: 'Register 2020',
+                        icon: 'assets/images/talks_icon.png',
+                        title: 'Kids Conference',
                       )),
                   InkWell(
                       onTap: () {
@@ -126,20 +136,17 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => HomeScreen()),
+                          MaterialPageRoute(
+                              builder: (context) => RegisterScreen()),
                         );
                       },
                       child: GridIcon(
-                        icon: 'assets/images/home_icon.png',
-                        title: 'Home',
+                        icon: 'assets/images/sandc_icon.png',
+                        title: 'Register 2020',
                       )),
                   InkWell(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => MerchScreen()),
-                        );
+                        _launchURL("https://squareup.com/store/tbco");
                       },
                       child: GridIcon(
                         icon: 'assets/images/merch_icon.png',
@@ -147,18 +154,38 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                       )),
                   InkWell(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ScheduleScreen()),
-                        );
+                        //TODO: finish onTap.
                       },
                       child: GridIcon(
-                        icon: 'assets/images/schedule_icon.png',
-                        title: 'Schedule',
+                        icon: 'assets/images/kids_icon.png',
+                        title: 'Kids Conference',
+                      )),
+                  InkWell(
+                      onTap: () {
+                        //TODO: finish onTap.
+                      },
+                      child: GridIcon(
+                        icon: 'assets/images/faq_icon.png',
+                        title: 'Faqs',
+                      )),
+                  InkWell(
+                      onTap: () {
+                        //TODO: finish onTap.
+                      },
+                      child: GridIcon(
+                        icon: 'assets/images/photos_icon.png',
+                        title: 'Photos',
                       )),
                 ],
               )))
     ]);
+  }
+
+  _launchURL(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 }

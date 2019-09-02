@@ -52,23 +52,23 @@ class highlightBottomNavScreenState  extends State<highlightBottomNavScreen>{
         currentIndex: _currentIndex,
         items: [
           BottomNavigationBarItem(
-            icon: Image.asset('assets/images/home_ic.png'),
+//            icon: Image.asset('assets/images/home_ic.png'),
             title: Text(''),
           ),
           BottomNavigationBarItem(
-            icon: Image.asset('assets/images/schedule_ic.png'),
+//            icon: Image.asset('assets/images/schedule_ic.png'),
             title: Text(''),
           ),
           BottomNavigationBarItem(
-            icon: Image.asset('assets/images/map_ic_2.png'),
+//            icon: Image.asset('assets/images/map_ic_2.png'),
             title: Text(''),
           ),
           BottomNavigationBarItem(
-            icon: Image.asset('assets/images/merch_ic.png'),
+//            icon: Image.asset('assets/images/merch_ic.png'),
             title: Text(''),
           ),
           BottomNavigationBarItem(
-            icon: Image.asset('assets/images/s_and_c_ic.png'),
+//            icon: Image.asset('assets/images/s_and_c_ic.png'),
             title: Text(''),
 
           ),
