@@ -33,10 +33,7 @@ class GuestsCellState extends State<GuestsCell> {
       crossAxisAlignment: CrossAxisAlignment.start,
       textBaseline: TextBaseline.alphabetic,
       children: <Widget>[
-        Hero(
-          tag: 'Guest Image',
-          child: Image.asset(speakerImage),
-        ),
+        Image.asset(speakerImage),
         Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,

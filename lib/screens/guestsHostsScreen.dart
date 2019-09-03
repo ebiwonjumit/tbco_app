@@ -38,7 +38,7 @@ class GuestsHostsScreenState extends State<GuestsHostsScreen> {
     "assets/images/herms_circle.png",
     "assets/images/grant_circle.png",
     "assets/images/gokey_circle.png",
-    "assets/images/banning_circle.png
+    "assets/images/banning_circle.png"
   ];
 
   @override
