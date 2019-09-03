@@ -38,9 +38,7 @@ flutter:
     - assets/images/menu_bg.jpg
     - assets/images/leadership.jpg
     - assets/images/talks.jpg
-    - assets/images/register_background.jpg
     - assets/images/register_background_r.jpg
-    - assets/images/kids_background.png
     - assets/images/kids_bg.png
     - assets/images/schedule_icon.png
     - assets/images/home_icon.png

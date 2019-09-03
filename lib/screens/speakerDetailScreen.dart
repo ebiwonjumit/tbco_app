@@ -54,7 +54,7 @@ class SpeakerDetailScreenState extends State<SpeakerDetailScreen> {
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage(speakerImage),
-                        fit: BoxFit.fitHeight,
+                        fit: BoxFit.cover,
                       ),
                     ),
                     child: Padding(

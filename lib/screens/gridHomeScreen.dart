@@ -113,15 +113,11 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                       )),
                   InkWell(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => KidsScreen()),
-                        );
+                        //TODO: finish onTap.
                       },
                       child: GridIcon(
                         icon: 'assets/images/talks_icon.png',
-                        title: 'Kids Conference',
+                        title: 'TBCO Talks',
                       )),
                   InkWell(
                       onTap: () {
@@ -164,7 +160,11 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                       )),
                   InkWell(
                       onTap: () {
-                        //TODO: finish onTap.
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => KidsScreen()),
+                        );
                       },
                       child: GridIcon(
                         icon: 'assets/images/kids_icon.png',
