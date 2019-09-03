@@ -50,6 +50,7 @@ flutter:
     - assets/images/talks_icon.png
     - assets/images/faq_icon.png
     - assets/images/photos_icon.png
+    - assets/images/leadership_icon.png
     - assets/splash_vid.mp4
 
   fonts:

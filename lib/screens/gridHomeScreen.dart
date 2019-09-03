@@ -123,6 +123,14 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                       )),
                   InkWell(
                       onTap: () {
+                        //TODO: finish onTap.
+                      },
+                      child: GridIcon(
+                        icon: 'assets/images/leadership_icon.png',
+                        title: 'Leadership Co',
+                      )),
+                  InkWell(
+                      onTap: () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(builder: (context) => MapScreen()),
@@ -170,7 +178,7 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                       )),
                   InkWell(
                       onTap: () {
-                        //TODO: finish onTap.
+                        _launchURL("tbcoconference.com/conference-2019-photos");
                       },
                       child: GridIcon(
                         icon: 'assets/images/photos_icon.png',
