@@ -178,7 +178,7 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                       )),
                   InkWell(
                       onTap: () {
-                        _launchURL("tbcoconference.com/conference-2019-photos");
+                        _launchURL("https://tbcoconference.com/conference-2019-photos");
                       },
                       child: GridIcon(
                         icon: 'assets/images/photos_icon.png',
