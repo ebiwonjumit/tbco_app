@@ -28,6 +28,22 @@ flutter:
 
 
   assets:
+    - assets/images/seeley_circle.png
+    - assets/images/redman_circle.png
+    - assets/images/tbco_circle.png
+    - assets/images/madu_circle.png
+    - assets/images/mac_circle.png
+    - assets/images/maxwell_circle.png
+    - assets/images/myrin_circle.png
+    - assets/images/mreed_circle.png
+    - assets/images/lampa_circle.png
+    - assets/images/lampas_circle.png
+    - assets/images/jreed_circle.png
+    - assets/images/johnson_circle.png
+    - assets/images/herms_circle.png
+    - assets/images/grant_circle.png
+    - assets/images/gokey_circle.png
+    - assets/images/banning_circle.png
     - assets/images/henry+seeley.jpg
     - assets/images/banning.jpg
     - assets/images/robert.jpg
