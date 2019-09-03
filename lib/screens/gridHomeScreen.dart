@@ -5,7 +5,7 @@ import 'package:tbco_conf_19/screens/scheduleScreen.dart';
 import 'package:tbco_conf_19/screens/registerScreen.dart';
 import 'package:tbco_conf_19/screens/homeScreen.dart';
 import 'package:tbco_conf_19/screens/mapScreen.dart';
-import 'package:tbco_conf_19/screens/merchScreen.dart';
+import 'package:tbco_conf_19/screens/kidsScreen.dart';
 import 'package:tbco_conf_19/screens/scheduleScreen.dart';
 
 import 'package:url_launcher/url_launcher.dart';
@@ -18,7 +18,6 @@ class GridHomeScreen extends StatefulWidget {
 class GridHomeScreenState extends State<GridHomeScreen> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Stack(children: <Widget>[
       Container(
         decoration: BoxDecoration(
@@ -85,7 +84,6 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                 ];
               },
               body: GridView.count(
-                scrollDirection: Axis.vertical,
                 crossAxisCount: 3,
                 mainAxisSpacing: 5.0,
                 crossAxisSpacing: 5.0,
@@ -115,7 +113,11 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                       )),
                   InkWell(
                       onTap: () {
-                        //TODO: finish onTap.
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => KidsScreen()),
+                        );
                       },
                       child: GridIcon(
                         icon: 'assets/images/talks_icon.png',

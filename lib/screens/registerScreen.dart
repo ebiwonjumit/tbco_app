@@ -21,7 +21,7 @@ class RegisterScreenState extends State<RegisterScreen> {
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
           child: Image.asset(
-            'assets/images/register_background.jpg',
+            'assets/images/register_background_r.jpg',
             fit: BoxFit.cover,
           )),
       Scaffold(
