@@ -61,12 +61,16 @@ class GridHomeScreenState extends State<GridHomeScreen> {
               GridIcon(
                 icon: 'assets/images/talks_icon.png',
                 title: 'TBCO Talks',
-                onPressed: null,
+                onPressed: () {
+                  _launchURL("https://www.tbcoconference.com/talks");
+                },
               ),
               GridIcon(
                 icon: 'assets/images/leadership_icon.png',
                 title: 'Leadership Co',
-                onPressed: null,
+                onPressed: () {
+                  _launchURL("https://www.tbcoconference.com/leadershipco");
+                },
               ),
               GridIcon(
                 icon: 'assets/images/kids_icon.png',
