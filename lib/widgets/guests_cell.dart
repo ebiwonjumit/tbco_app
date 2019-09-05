@@ -23,20 +23,27 @@ class GuestsCellState extends State<GuestsCell> {
   final String speakerImage;
   final VoidCallback onPressed;
   bool isPressed = false;
+  Color bg = Colors.transparent;
 
   @override
   Widget build(BuildContext context) {
     final Container cell = Container(
+        color: bg,
         child: Row(
       mainAxisSize: MainAxisSize.max,
       mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
       textBaseline: TextBaseline.alphabetic,
       children: <Widget>[
-        Image.asset(speakerImage),
+        Container(width: 50, height: 50, child: Image.asset(speakerImage)),
+        Padding(
+          padding: EdgeInsets.only(left: 10),
+        ),
         Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
+          textBaseline: TextBaseline.alphabetic,
+          textDirection: TextDirection.ltr,
           children: <Widget>[
             Text(
               speakerName,
@@ -51,9 +58,8 @@ class GuestsCellState extends State<GuestsCell> {
               speakerSubtitle,
               style: TextStyle(
                 color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'Respira',
-                fontSize: 14,
+                fontFamily: 'Helvetica-Regular',
+                fontSize: 12,
               ),
             ),
           ],
@@ -65,20 +71,24 @@ class GuestsCellState extends State<GuestsCell> {
             onTapCancel: () {
               setState(() {
                 isPressed = false;
+                bg = Colors.transparent;
               });
             },
             onTapDown: (TapDownDetails details) {
               setState(() {
+                bg = Colors.grey;
                 isPressed = true;
               });
             },
             onTapUp: (TapUpDetails details) {
               setState(() {
                 isPressed = false;
+                bg = Colors.transparent;
               });
             },
             onTap: () {
               onPressed();
+              bg = Colors.transparent;
             },
             child: cell));
   }

@@ -48,6 +48,7 @@ flutter:
     - assets/images/banning.jpg
     - assets/images/robert.jpg
     - assets/images/darrell.jpg
+    - assets/images/darrell.png
     - assets/images/tbco.jpg
     - assets/images/map.png
     - assets/images/sand.jpg
@@ -67,6 +68,9 @@ flutter:
     - assets/images/faq_icon.png
     - assets/images/photos_icon.png
     - assets/images/leadership_icon.png
+    - assets/images/testimony_icon.png
+    - assets/images/spotify.png
+    - assets/images/apple.png
     - assets/splash_vid.mp4
 
   fonts:
