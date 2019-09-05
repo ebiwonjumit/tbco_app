@@ -76,10 +76,7 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                 icon: 'assets/images/kids_icon.png',
                 title: 'Kids',
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => KidsScreen()),
-                  );
+                  _launchURL("https://www.tbcoconference.com/kids");
                 },
               ),
               GridIcon(
