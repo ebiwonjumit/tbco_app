@@ -95,11 +95,14 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                   _launchURL("https://squareup.com/store/tbco");
                 },
               ),
-//              GridIcon(
-//                icon: 'assets/images/faq_icon.png',
-//                title: 'Faqs',
-//                onPressed: null,
-//              ),
+              GridIcon(
+                icon: 'assets/images/faq_icon.png',
+                title: 'Faqs',
+                onPressed: () {
+                  _launchURL(
+                      "https://www.tbcoconference.com/faq-2");
+                },
+              ),
               GridIcon(
                 icon: 'assets/images/photos_icon.png',
                 title: 'Photos',
