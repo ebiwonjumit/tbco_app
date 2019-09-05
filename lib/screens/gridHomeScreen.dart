@@ -40,7 +40,7 @@ class GridHomeScreenState extends State<GridHomeScreen> {
             children: <Widget>[
               GridIcon(
                   icon: 'assets/images/guests_icon.png',
-                  title: 'Guests/Hosts',
+                  title: 'Guests & Hosts',
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -95,11 +95,11 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                   _launchURL("https://squareup.com/store/tbco");
                 },
               ),
-              GridIcon(
-                icon: 'assets/images/faq_icon.png',
-                title: 'Faqs',
-                onPressed: null,
-              ),
+//              GridIcon(
+//                icon: 'assets/images/faq_icon.png',
+//                title: 'Faqs',
+//                onPressed: null,
+//              ),
               GridIcon(
                 icon: 'assets/images/photos_icon.png',
                 title: 'Photos',

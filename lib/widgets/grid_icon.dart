@@ -41,7 +41,7 @@ class GridIconState extends State<GridIcon> {
             style: TextStyle(
                 color: Colors.white,
                 fontFamily: 'Helvetica-Regular',
-                fontSize: 15),
+                fontSize: 13),
           ),
         ))
       ],
