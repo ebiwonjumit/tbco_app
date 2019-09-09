@@ -33,7 +33,8 @@ class SpeakerDetailScreenState extends State<SpeakerDetailScreen> {
       Container(
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/images/menu_bg.jpg'), fit: BoxFit.cover)),
+                image: AssetImage('assets/images/menu_bg.jpg'),
+                fit: BoxFit.cover)),
       ),
       Scaffold(
           backgroundColor: Colors.transparent,
@@ -57,18 +58,6 @@ class SpeakerDetailScreenState extends State<SpeakerDetailScreen> {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: Padding(
-                      padding: EdgeInsets.only(top: 230, left: 15, right: 10),
-                      child: Text(
-                        speakerName,
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 25,
-                            fontFamily: 'Respira'),
-                        textAlign: TextAlign.left,
-                        softWrap: true,
-                      ),
-                    ),
                   ),
                 ),
                 floating: true,
@@ -77,11 +66,28 @@ class SpeakerDetailScreenState extends State<SpeakerDetailScreen> {
                 delegate: SliverChildListDelegate([
                   Padding(
                       padding: EdgeInsets.only(top: 10, left: 25, right: 25),
-                      child: Text(
-                        speakerInfo,
-                        style: TextStyle(color: Colors.white, fontSize: 20),
-                        textAlign: TextAlign.left,
-                      ))
+                      child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: <Widget>[
+                            Text(
+                              speakerName,
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 25,
+                                  fontFamily: 'Respira'),
+                              textAlign: TextAlign.left,
+                              softWrap: true,
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(top:5),
+                                child: Text(
+                              speakerInfo,
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 20),
+                              textAlign: TextAlign.left,
+                            ))
+                          ]))
                 ]),
               )
             ],

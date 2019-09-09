@@ -30,7 +30,7 @@ class ScheduleScreenState extends State<ScheduleScreen> {
             Tab(text: 'SEPT. 13th'),
             Tab(text: 'SEPT. 14th')
           ]),
-          title: Text('+++CONFERENCE SCHEDULE+++',
+          title: Text('CONFERENCE SCHEDULE',
             style: TextStyle(
                 color: Colors.white, fontSize: 18, fontFamily: 'Helvetica'),
           ),

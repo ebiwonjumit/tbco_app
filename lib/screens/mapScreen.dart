@@ -24,7 +24,7 @@ class MapScreenState extends State<MapScreen> {
         backgroundColor: Color(0xFF2d2d2d),
         centerTitle: true,
         title: Text(
-          '+++AUDITORIUM MAP+++',
+          'AUDITORIUM MAP',
           textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.white,

@@ -21,7 +21,7 @@ class KidsScreen extends StatelessWidget {
                   background: Container(
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage("assets/images/kids_bg.png"),
+                        image: AssetImage(""),
                         fit: BoxFit.cover,
                       ),
                     ),

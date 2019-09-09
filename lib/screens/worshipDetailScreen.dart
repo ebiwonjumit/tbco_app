@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class WorshipDetailScreen extends StatefulWidget {
-  const WorshipDetailScreen(
-      this.speakerName, this.speakerImage, this.appleLink, this.spotifyLink);
+  const WorshipDetailScreen(this.speakerName, this.speakerImage, this.appleLink,
+      this.spotifyLink);
 
   final String speakerName;
   final String speakerImage;
@@ -12,12 +12,13 @@ class WorshipDetailScreen extends StatefulWidget {
 
   @override
   WorshipDetailScreenState createState() =>
-      WorshipDetailScreenState(speakerName, speakerImage, appleLink, spotifyLink);
+      WorshipDetailScreenState(
+          speakerName, speakerImage, appleLink, spotifyLink);
 }
 
 class WorshipDetailScreenState extends State<WorshipDetailScreen> {
-  WorshipDetailScreenState(
-      this.speakerName, this.speakerImage, this.appleLink, this.spotifyLink);
+  WorshipDetailScreenState(this.speakerName, this.speakerImage, this.appleLink,
+      this.spotifyLink);
 
   final String speakerName;
   final String speakerImage;
@@ -36,7 +37,8 @@ class WorshipDetailScreenState extends State<WorshipDetailScreen> {
       Container(
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/images/menu_bg.jpg'), fit: BoxFit.cover)),
+                image: AssetImage('assets/images/menu_bg.jpg'),
+                fit: BoxFit.cover)),
       ),
       Scaffold(
           backgroundColor: Colors.transparent,
@@ -60,18 +62,6 @@ class WorshipDetailScreenState extends State<WorshipDetailScreen> {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: Padding(
-                      padding: EdgeInsets.only(top: 230, left: 15, right: 10),
-                      child: Text(
-                        speakerName,
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 25,
-                            fontFamily: 'Respira'),
-                        textAlign: TextAlign.left,
-                        softWrap: true,
-                      ),
-                    ),
                   ),
                 ),
                 floating: true,
@@ -80,24 +70,59 @@ class WorshipDetailScreenState extends State<WorshipDetailScreen> {
                 delegate: SliverChildListDelegate([
                   Padding(
                       padding: EdgeInsets.only(top: 10, left: 25, right: 25),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          IconButton(
-                            icon: Image.asset("assets/images/apple.png"),
-                            onPressed: () {
-                              _launchURL(appleLink);
-                            },
-                          ),
-                          IconButton(
-                            icon: Image.asset("assets/images/spotify.png"),
-                            onPressed: () {
-                              _launchURL(spotifyLink);
-                            },
-                          ),
-                        ],
-                      ))
+                      child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: <Widget>[
+                            Center(
+                              child: Text(
+                                speakerName,
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 25,
+                                    fontFamily: 'Respira'),
+                                textAlign: TextAlign.left,
+                                softWrap: true,
+                              ),
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: <Widget>[
+                                IconButton(
+                                  icon: Image.asset("assets/images/apple.png"),
+                                  onPressed: () {
+                                    _launchURL(appleLink);
+                                  },
+                                ),
+                                IconButton(
+                                  icon: Image.asset(
+                                      "assets/images/spotify.png"),
+                                  onPressed: () {
+                                    _launchURL(spotifyLink);
+                                  },
+                                ),
+                                IconButton(
+                                  icon: Image.asset(
+                                      "assets/images/tbcoMusic.png"),
+                                  onPressed: () {
+                                    _launchURL('https://thebelonging.co');
+                                  },
+                                ),
+                              ],
+                            ),
+                            Padding(
+                                padding:
+                                EdgeInsets.only(
+                                    top: 5),
+                                child: Text(
+                                  "The Belonging Co is a church movement based in Nashville, TN. Since it’s inception in 2014, the church has become known as a place to find freedom, breakthrough, and healing through God’s Word, His presence and worship.  The heart of The Belonging Co is that every song released would empower both individuals and the collective body of Christ to encounter God through worship, and experience the freedom that comes through knowing Jesus.\n\nWe desire encounter over entertainment, intimacy over industry, presence over presentation, people over position… And most of all JESUS over everything.",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 20),
+                                  textAlign: TextAlign.left,
+                                ))
+                          ])
+                  )
                 ]),
               )
             ],
