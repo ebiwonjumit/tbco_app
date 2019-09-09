@@ -8,7 +8,7 @@ import 'package:tbco_conf_19/screens/gridHomeScreen.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    title: 'Named Routes Demo',
+    title: 'TBCOCONF19',
     // Start the app with the "/" named route. In this case, the app starts
     // on the FirstScreen widget.
     initialRoute: 'splash',

@@ -124,10 +124,7 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                 icon: 'assets/images/sandc_icon.png',
                 title: 'Register 2020',
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => RegisterScreen()),
-                  );
+                  _launchURL('https://thebelongingco.churchcenter.com/registrations/events/271006');
                 },
               ),
             ],

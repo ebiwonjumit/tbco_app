@@ -1,4 +1,4 @@
-package com.template.template_event_app_v1
+package com.conference.tbco
 
 import android.os.Bundle
 
