@@ -113,6 +113,14 @@ class GridHomeScreenState extends State<GridHomeScreen> {
                 },
               ),
               GridIcon(
+                icon: 'assets/images/competition_icon.png',
+                title: 'Competition',
+                onPressed: () {
+                  _launchURL(
+                      "https://www.tbcoconference.com/competition-2019");
+                },
+              ),
+              GridIcon(
                 icon: 'assets/images/testimony_icon.png',
                 title: 'Testify',
                 onPressed: () {
