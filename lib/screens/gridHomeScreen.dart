@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 
+
 import 'package:tbco_conf_19/widgets/grid_icon.dart';
 import 'package:tbco_conf_19/screens/scheduleScreen.dart';
-import 'package:tbco_conf_19/screens/registerScreen.dart';
-import 'package:tbco_conf_19/screens/homeScreen.dart';
 import 'package:tbco_conf_19/screens/mapScreen.dart';
-import 'package:tbco_conf_19/screens/kidsScreen.dart';
 import 'package:tbco_conf_19/screens/guestsHostsScreen.dart';
+import 'package:tbco_conf_19/firebaseNotifications.dart';
 
 import 'package:url_launcher/url_launcher.dart';
 
@@ -16,6 +15,16 @@ class GridHomeScreen extends StatefulWidget {
 }
 
 class GridHomeScreenState extends State<GridHomeScreen> {
+
+
+  @override
+  void initState() {
+    super.initState();
+    FirebaseNotifications().setUpFirebase();
+
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Stack(children: <Widget>[

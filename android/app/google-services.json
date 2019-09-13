@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "220818249773",
+    "firebase_url": "https://tbco-conference-app.firebaseio.com",
+    "project_id": "tbco-conference-app",
+    "storage_bucket": "tbco-conference-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220818249773:android:4a38f8f46f7f8cfd8040a4",
+        "android_client_info": {
+          "package_name": "com.conference.tbco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220818249773-bj8kv5a1e1n1depo8m14ppjqkun97aa8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4VONQRo67rSVRiRWGc9eeivwjbtHt50c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220818249773-bj8kv5a1e1n1depo8m14ppjqkun97aa8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "220818249773-gb9cgc7hr7ottbtq8ummv3hjha4uq4bk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.conference.tbco"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

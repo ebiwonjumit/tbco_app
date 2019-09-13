@@ -2,7 +2,7 @@ name: tbco_conf_19
 description: Event App for TBCØ Conference 2019
 
 
-version: 1.0.0+2
+version: 0.0.0+3
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -17,6 +17,7 @@ dependencies:
   video_player: ^0.10.1+6
   url_launcher: ^5.1.2
   cupertino_icons: ^0.1.2
+  firebase_messaging: ^5.1.5
 
 dev_dependencies:
   flutter_test:
